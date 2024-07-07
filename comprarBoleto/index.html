@@ -43,7 +43,26 @@
         
             <button class="bsig">Siguiente</button>              
     </main>
-    
+   
+    <!-- Modal -->
+    <div id="ticketModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Comprar Boleto</h2>
+            <form id="ticketForm">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="selectedTime">Hora seleccionada:</label>
+                <input type="text" id="selectedTime" name="selectedTime" readonly>
+                <button type="submit">Comprar</button>
+            </form>
+        </div>
+    </div>
+
+
+
     <script src="script.js"></script>
 
 </body>
