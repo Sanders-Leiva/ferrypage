@@ -40,6 +40,7 @@ const timeLinks = document.querySelectorAll('.rooms .time');
 const modal = document.getElementById('ticketModal');
 const closeModal = document.querySelector('.modal .close');
 const selectedTimeInput = document.getElementById('selectedTime');
+const dateInput = document.getElementById('date');
 
 let selectedTimeLink = null;
 
@@ -67,6 +68,11 @@ document.addEventListener('click', function(event) {
 siguienteButton.addEventListener('click', function() {
     if (selectedTimeLink) {
         selectedTimeInput.value = selectedTimeLink.textContent;
+
+        // Set the current date as default value
+        const today = new Date().toISOString().split('T')[0];
+        dateInput.value = today;
+
         modal.style.display = 'block';
     }
 });
