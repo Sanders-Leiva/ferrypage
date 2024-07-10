@@ -2,14 +2,14 @@ body,
 html {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;   
-    background-image:url(../imagen/San_Jorge_Puerto.jpg);
+    font-family: Arial, sans-serif;
+    background-image: url(../imagen/San_Jorge_Puerto.jpg);
     background-position: center; /* Centra la imagen horizontalmente */
     background-repeat: no-repeat;
 }
 
 header {
-    background: linear-gradient(90deg, rgba(238, 174, 231, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    background: linear-gradient(90deg, rgba(238, 174, 231, 0.8) 0%, rgba(148, 187, 233, 0.8) 100%);
     padding: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -68,6 +68,28 @@ nav ul li.comprar-boleto a:hover {
     color: white;
 }
 
+/* Add media queries for mobile responsiveness */
+
+/* For screens with a maximum width of 768px (e.g., tablets) */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+    header nav ul li {
+        margin-bottom: 10px;
+    }
+    header nav ul li.logo {
+        margin-left: 20px;
+    }
+    header ul li a {
+        font-size: 16px;
+    }
+    nav ul li.comprar-boleto a {
+        padding: 10px 15px;
+    }
+}
+
+/* For screens with a maximum width of 480px (e.g., mobile phones) */
 
 
 
@@ -75,4 +97,42 @@ nav ul li.comprar-boleto a:hover {
 
 
 
+/* Footer styles */
+footer {
+    background: rgb(37,42,60);
+    background: -moz-linear-gradient(90deg, rgba(37,42,60,0.8) 0%, rgba(0,114,249,0.8) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(37,42,60,0.8) 0%, rgba(0,114,249,0.8) 100%);
+    background: linear-gradient(90deg, rgba(37,42,60,0.8) 0%, rgba(0,114,249,0.8) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#252a3c",endColorstr="#0072f9",GradientType=1);
+    color: #fff;
+    padding: 0px;
+    text-align: center;
+    font-family: monospace;
+}
 
+.footer-container {
+    max-width: auto;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.footer-container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container li {
+    margin-right: 20px;
+}
+
+.footer-container a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-container a:hover {
+    color: #ccc;
+}

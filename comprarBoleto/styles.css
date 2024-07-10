@@ -2,14 +2,15 @@ body,
 html {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;   
-    background-image:url(../imagen/San_Jorge_Puerto.jpg);
-    background-position: center; /* Centra la imagen horizontalmente */
+    font-family: Arial, sans-serif;
+    background-image: url(../imagen/San_Jorge_Puerto.jpg);
+    background-position: center;
+    /* Centra la imagen horizontalmente */
     background-repeat: no-repeat;
 }
 
 header {
-    background: linear-gradient(90deg, rgba(238, 174, 231, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    background: linear-gradient(90deg, rgba(238, 174, 231, 0.8) 0%, rgba(148, 187, 233, 0.8) 100%);
     padding: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -29,9 +30,7 @@ header nav ul {
     width: 100%;
 }
 
-header nav ul li {
-
-}
+header nav ul li {}
 
 header nav ul li.logo {
     margin-right: auto;
@@ -120,7 +119,7 @@ main {
     padding: 10px 0;
     margin: 8px 0;
     border-radius: 4px;
-    display:block;
+    display: block;
     justify-content: space-between;
     align-items: center;
     text-decoration: none;
@@ -133,7 +132,7 @@ main {
 }
 
 
-.bsig{
+.bsig {
     color: #E0E0E0;
     background-color: rgba(1, 1, 1, 0.5);
     border: 2px solid rgb(16, 2, 216);
@@ -160,30 +159,38 @@ main {
     color: black;
     border: none;
     cursor: default;
-  }
+}
 
 
 
-  /* Modal styles */
+/* Modal styles */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
 }
 
 .modal-content {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 15% auto;
+    /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 80%;
+    /* Could be more or less, depending on screen size */
     max-width: 500px;
     border-radius: 8px;
 }
@@ -232,3 +239,246 @@ main {
     background-color: #005bb5;
 }
 
+
+
+
+/* Footer styles */
+footer {
+    background: rgb(37,42,60);
+    background: -moz-linear-gradient(90deg, rgba(37,42,60,0.8) 0%, rgba(0,114,249,0.8) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(37,42,60,0.8) 0%, rgba(0,114,249,0.8) 100%);
+    background: linear-gradient(90deg, rgba(37,42,60,0.8) 0%, rgba(0,114,249,0.8) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#252a3c",endColorstr="#0072f9",GradientType=1);
+    color: #fff;
+    padding: 0px;
+    text-align: center;
+    font-family: monospace;
+}
+
+.footer-container {
+    max-width: auto;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.footer-container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container li {
+    margin-right: 20px;
+}
+
+.footer-container a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-container a:hover {
+    color: #ccc;
+}
+
+
+/* Add this to the existing CSS */
+
+/* Mobile devices (max-width: 480px) */
+@media only screen and (max-width: 480px) {
+    /* Header */
+    header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header nav ul li {
+        margin-bottom: 10px;
+    }
+
+    header nav ul li a {
+        font-size: 16px;
+    }
+
+    header nav ul li.logo {
+        margin-right: 0;
+        margin-left: 0;
+    }  
+    /* Main */
+    main {
+      padding: 10px;
+    }
+   .schedule-container {
+      padding: 10px;
+      max-width: 300px;
+    }
+   .dates {
+      flex-wrap: wrap;
+    }
+   .date {
+      padding: 10px 20px;
+    }
+   .rooms {
+      flex-wrap: wrap;
+    }
+   .room {
+      margin-bottom: 10px;
+    }
+   .time {
+      padding: 5px 0;
+    }
+  
+    /* Modal */
+   .modal-content {
+      width: 90%;
+      margin: 10% auto;
+    }
+  
+    /* Footer */
+    footer {
+      padding: 10px;
+    }
+   .footer-container {
+      padding: 10px;
+    }
+   .footer-container ul {
+      flex-wrap: wrap;
+    }
+   .footer-container li {
+      margin-right: 10px;
+    }
+  }
+  
+  /* Tablets (max-width: 768px) */
+  @media only screen and (max-width: 768px) {
+    /* Header */
+    header {
+      padding: 15px;
+    }
+    header nav ul {
+      flex-wrap: wrap;
+    }
+    header nav ul li {
+      margin-right: 15px;
+    }
+    header nav ul li.logo {
+      margin-left: 15px;
+    }
+    header nav ul li a {
+      font-size: 16px;
+    }
+  
+    /* Main */
+    main {
+      padding: 15px;
+    }
+   .schedule-container {
+      padding: 15px;
+      max-width: 400px;
+    }
+   .dates {
+      flex-wrap: wrap;
+    }
+   .date {
+      padding: 15px 30px;
+    }
+   .rooms {
+      flex-wrap: wrap;
+    }
+   .room {
+      margin-bottom: 15px;
+    }
+   .time {
+      padding: 10px 0;
+    }
+  
+    /* Modal */
+   .modal-content {
+      width: 80%;
+      margin: 15% auto;
+    }
+  
+    /* Footer */
+    footer {
+      padding: 15px;
+    }
+   .footer-container {
+      padding: 15px;
+    }
+   .footer-container ul {
+      flex-wrap: wrap;
+    }
+   .footer-container li {
+      margin-right: 15px;
+    }
+  }
+  
+  /* Desktops (min-width: 1024px) */
+  @media only screen and (min-width: 1024px) {
+    /* Header */
+    header {
+      padding: 20px;
+    }
+    header nav ul {
+      justify-content: space-between;
+    }
+    header nav ul li {
+      margin-right: 20px;
+    }
+    header nav ul li.logo {
+      margin-left: 20px;
+    }
+    header nav ul li a {
+      font-size: 18px;
+    }
+  
+    /* Main */
+    main {
+      padding: 20px;
+    }
+   .schedule-container {
+      padding: 20px;
+      max-width: 600px;
+    }
+   .dates {
+      justify-content: space-between;
+    }
+   .date {
+      padding: 20px 40px;
+    }
+   .rooms {
+      justify-content: space-between;
+    }
+   .room {
+      margin-bottom: 20px;
+    }
+   .time {
+      padding: 15px 0;
+    }
+  
+    /* Modal */
+   .modal-content {
+      width: 70%;
+      margin: 20% auto;
+    }
+  
+    /* Footer */
+    footer {
+      padding: 20px;
+    }
+   .footer-container {
+      padding: 20px;
+    }
+   .footer-container ul {
+      justify-content: space-between;
+    }
+   .footer-container li {
+      margin-right: 20px;
+    }
+  }
