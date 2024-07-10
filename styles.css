@@ -3,9 +3,8 @@ html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-image: url(../imagen/San_Jorge_Puerto.jpg);
-    background-position: center; /* Centra la imagen horizontalmente */
-    background-repeat: no-repeat;
+    background: rgb(227,226,250);
+    background: radial-gradient(circle, rgba(227,226,250,1) 0%, rgba(167,180,255,1) 100%);
 }
 
 header {
@@ -89,21 +88,132 @@ nav ul li.comprar-boleto a:hover {
     }
 }
 
-/* For screens with a maximum width of 480px (e.g., mobile phones) */
 
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
+.hero {
+    background: url('./imagen/San_Jorge_Puerto.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
 
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
 
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
 
+.cta-button {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e65c00;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #004080;
+    text-align: center;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #333;
+    text-align: center;
+}
+
+.attractions, .services, .testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.attraction, .service, .testimonial {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    flex: 1 1 calc(33.333% - 40px);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    max-width: 300px;
+    text-align: left;
+}
+
+.attraction:hover, .service:hover, .testimonial:hover {
+    transform: translateY(-5px);
+}
+
+.attraction h3, .service h3, .testimonial p.author {
+    margin-bottom: 10px;
+    color: #004080;
+}
+
+.schedules table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.schedules th, .schedules td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.schedules th {
+    background-color: #004080;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .attraction, .service, .testimonial {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .hero {
+        padding: 50px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+}
 
 
 /* Footer styles */
 footer {
-    background: rgb(37,42,60);
-    background: -moz-linear-gradient(90deg, rgba(37,42,60,0.8) 0%, rgba(0,114,249,0.8) 100%);
-    background: -webkit-linear-gradient(90deg, rgba(37,42,60,0.8) 0%, rgba(0,114,249,0.8) 100%);
-    background: linear-gradient(90deg, rgba(37,42,60,0.8) 0%, rgba(0,114,249,0.8) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#252a3c",endColorstr="#0072f9",GradientType=1);
+    background: rgb(0,10,36);
+    background: linear-gradient(90deg, rgba(0,10,36,1) 0%, rgba(8,30,106,1) 99%);
     color: #fff;
     padding: 0px;
     text-align: center;
