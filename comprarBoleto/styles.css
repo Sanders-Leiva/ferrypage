@@ -55,6 +55,23 @@ header nav ul li.logo img {
 }
 
 
+@media (max-width: 768px) {
+  header nav ul {
+      flex-direction: column;
+      padding: auto;
+  }
+  header nav ul li {
+    margin: 8px;
+  }
+  header nav ul li.logo {
+      margin: 0 auto;
+      text-align: center;
+  }
+  header ul li a {
+      font-size: 16px;
+  }
+}
+
 main {
     font-family: Arial, sans-serif;
     margin: 0;
