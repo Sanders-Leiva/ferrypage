@@ -20,7 +20,7 @@
 
     <main>
         <div class="schedule-container">
-            <h2> Seleccione horario:</h2>
+            <h2>Seleccione horario:</h2>
             <div class="dates" id="dates">
                 <!-- Fechas generadas dinámicamente -->
             </div>
@@ -44,38 +44,47 @@
             <button class="bsig">Siguiente</button>              
     </main>
    
-    <!-- Modal -->
-    <!-- Modal -->
-<div id="ticketModal" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2>Comprar Boleto</h2>
-        <form id="ticketForm">
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="vehicle">¿Lleva vehículo?</label>
-            <select id="vehicle" name="vehicle" required>
-                <option value="no">No</option>
-                <option value="si">Sí</option>
-            </select>
-
-            <label for="date">Fecha:</label>
-            <input type="date" id="date" name="date" value="" required>
-
-            <label for="tickets">Cantidad de boletos:</label>
-            <input type="number" id="tickets" name="tickets" min="1" value="1" required>
-
-            <label for="selectedTime">Hora seleccionada:</label>
-            <input type="text" id="selectedTime" name="selectedTime" readonly>
-
-            <button type="submit">Comprar</button>
-        </form>
+    <!-- Modal de Compra -->
+    <div id="ticketModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Comprar Boleto</h2>
+            <form id="ticketForm">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="vehicle">¿Lleva vehículo?</label>
+                <select id="vehicle" name="vehicle" required>
+                    <option value="no">No</option>
+                    <option value="si">Sí</option>
+                </select>
+    
+                <label for="date">Fecha:</label>
+                <input type="date" id="date" name="date" value="" required>
+    
+                <label for="tickets">Cantidad de boletos:</label>
+                <input type="number" id="tickets" name="tickets" min="1" value="1" required>
+    
+                <label for="selectedTime">Hora seleccionada:</label>
+                <input type="text" id="selectedTime" name="selectedTime" readonly>
+    
+                <button type="submit">Comprar</button>
+            </form>
+        </div>
     </div>
-</div>
+
+    <!-- Modal de Éxito -->
+    <div id="successModal" class="modal">
+        <div class="modal-content success-content">
+            <span class="close-success">&times;</span>
+            <h2>Compra Exitosa</h2>
+            <p>El boleto ha sido enviado a su correo electrónico.</p>
+            <button id="successButton">Aceptar</button>
+        </div>
+    </div>
 
     <footer>
         <div class="footer-container">
@@ -88,9 +97,6 @@
         </div>
     </footer>
 
-
-
     <script src="script.js"></script>
-
 </body>
 </html>

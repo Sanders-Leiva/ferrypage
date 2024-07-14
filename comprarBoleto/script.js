@@ -86,3 +86,39 @@ window.addEventListener('click', function(event) {
         modal.style.display = 'none';
     }
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const ticketForm = document.getElementById('ticketForm');
+    const successModal = document.getElementById('successModal');
+    const closeSuccessModal = document.querySelector('.close-success');
+    const successButton = document.getElementById('successButton');
+
+    ticketForm.addEventListener('submit', function (event) {
+        event.preventDefault(); // Evita el envío del formulario
+
+        // Mostrar el modal de éxito
+        successModal.style.display = 'block';
+    });
+
+    // Cerrar el modal de éxito
+    closeSuccessModal.addEventListener('click', function () {
+        successModal.style.display = 'none';
+    });
+
+    successButton.addEventListener('click', function () {
+        successModal.style.display = 'none';
+    });
+
+    // Manejo del cierre del modal de compra
+    const modal = document.getElementById('ticketModal');
+    const closeModal = document.querySelector('.modal .close');
+    closeModal.addEventListener('click', function () {
+        modal.style.display = 'none';
+    });
+
+    // Abrir el modal para la compra de boletos
+    const openModalButton = document.querySelector('.bsig');
+    openModalButton.addEventListener('click', function () {
+        modal.style.display = 'block';
+    });
+});
