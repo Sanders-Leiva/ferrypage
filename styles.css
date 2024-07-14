@@ -74,13 +74,15 @@ nav ul li.comprar-boleto a:hover {
     header nav ul {
         flex-direction: column;
         padding: auto;
+        align-items: baseline;
+        margin: 10px;
     }
     header nav ul li {
         margin-bottom: 10px;
     }
     header nav ul li.logo {
-        margin: 0 auto;
-        text-align: center;
+        margin: 0 ;
+        text-align: left;
     }
     header ul li a {
         font-size: 16px;

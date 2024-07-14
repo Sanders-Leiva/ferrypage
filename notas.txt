@@ -27,3 +27,177 @@
     /* Adjust main content */
 
 }
+
+
+
+
+
+@media only screen and (max-width: 1200px) {
+  /* Adjust styles for larger screens here */
+  .schedule-container {
+    max-width: 800px;
+  }
+  .rooms {
+    flex-wrap: wrap;
+  }
+  .room {
+    width: 50%;
+  }
+}
+
+/* For screens with a maximum width of 992px */
+@media only screen and (max-width: 992px) {
+  /* Adjust styles for medium screens here */
+  .schedule-container {
+    max-width: 600px;
+  }
+  .rooms {
+    flex-wrap: wrap;
+  }
+  .room {
+    width: 100%;
+  }
+  .time {
+    font-size: 16px;
+  }
+}
+
+/* Add this media query for mobile devices with a maximum width of 360px */
+@media only screen and (max-width: 360px) {
+  /* Adjust styles for very small mobile screens here */
+  .schedule-container {
+    max-width: 250px;
+    padding: 10px;
+  }
+  .rooms {
+    flex-wrap: wrap;
+  }
+  .room {
+    width: 100%;
+  }
+  .time {
+    font-size: 10px;
+    padding: 5px 0;
+  }
+  .bsig {
+    font-size: 9px;
+    padding: 5px 10px;
+  }
+  .modal-content {
+    width: 90%;
+    margin: 10% auto;
+  }
+  .modal form input {
+    padding: 5px;
+    margin-top: 3px;
+  }
+  .modal form button {
+    padding: 5px;
+    margin-top: 10px;
+  }
+  footer {
+    padding: 5px;
+  }
+  .footer-container {
+    padding: 5px;
+  }
+  .footer-container ul {
+    flex-wrap: wrap;
+  }
+  .footer-container li {
+    margin-right: 10px;
+  }
+}
+
+/* Modify the existing media queries to adjust styles for larger mobile screens */
+@media only screen and (max-width: 480px) {
+  /* Adjust styles for small mobile screens here */
+  .schedule-container {
+    max-width: 300px;
+    padding: 15px;
+  }
+  .rooms {
+    flex-wrap: wrap;
+  }
+  .room {
+    width: 100%;
+  }
+  .time {
+    font-size: 12px;
+    padding: 10px 0;
+  }
+  .bsig {
+    font-size: 11px;
+    padding: 10px 15px;
+  }
+  .modal-content {
+    width: 85%;
+    margin: 12% auto;
+  }
+  .modal form input {
+    padding: 8px;
+    margin-top: 5px;
+  }
+  .modal form button {
+    padding: 10px;
+    margin-top: 15px;
+  }
+  footer {
+    padding: 10px;
+  }
+  .footer-container {
+    padding: 10px;
+  }
+  .footer-container ul {
+    flex-wrap: wrap;
+  }
+  .footer-container li {
+    margin-right: 15px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* Adjust styles for medium mobile screens here */
+  .schedule-container {
+    max-width: 400px;
+    padding: 20px;
+  }
+  .rooms {
+    flex-wrap: wrap;
+  }
+  .room {
+    width: 100%;
+  }
+  .time {
+    font-size: 14px;
+    padding: 15px 0;
+  }
+  .bsig {
+    font-size: 13px;
+    padding: 15px 20px;
+  }
+  .modal-content {
+    width: 80%;
+    margin: 15% auto;
+  }
+  .modal form input {
+    padding: 10px;
+    margin-top: 8px;
+  }
+  .modal form button {
+    padding: 15px;
+    margin-top: 20px;
+  }
+  footer {
+    padding: 15px;
+  }
+  .footer-container {
+    padding: 15px;
+  }
+  .footer-container ul {
+    flex-wrap: wrap;
+  }
+  .footer-container li {
+    margin-right: 20px;
+  }
+}
