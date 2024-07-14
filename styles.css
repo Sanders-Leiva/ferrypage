@@ -173,23 +173,36 @@ p {
     color: #004080;
 }
 
-.schedules table {
+.schedules {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .schedules table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
-}
-
-.schedules th, .schedules td {
+  }
+  
+  .schedules th, .schedules td {
+    border: 1px solid #ddd;
     padding: 10px;
     text-align: left;
-    border-bottom: 1px solid #ddd;
-}
-
-.schedules th {
-    background-color: #004080;
-    color: white;
-}
-
+  }
+  
+  .schedules th {
+    background-color: #0078d4;
+    color: #fff;
+  }
+  
+  .schedules tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .schedules tr:hover {
+    background-color: #e5e5e5;
+  }
 @media (max-width: 768px) {
     .attraction, .service, .testimonial {
         flex: 1 1 100%;
