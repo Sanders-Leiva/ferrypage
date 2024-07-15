@@ -118,6 +118,7 @@ main {
 .hero p {
     font-size: 1.2em;
     margin-bottom: 20px;
+    color: #e5e5e5;
 }
 
 .cta-button {
